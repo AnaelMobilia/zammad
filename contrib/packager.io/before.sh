@@ -22,5 +22,8 @@ ZAMMAD_VERSION="$APP_PKG_VERSION-$APP_PKG_ITERATION"
 echo "Setting VERSION information to $ZAMMAD_VERSION"
 echo "$ZAMMAD_VERSION" > VERSION
 
+# TODO: REVERT
+rm yarn.lock
+
 # cleanup
 script/build/cleanup.sh
